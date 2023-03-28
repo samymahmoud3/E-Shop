@@ -271,7 +271,87 @@ body {
     border-color: #fff;
     font-weight: 900;
 }
+/*--about us--*/
+#About {
+    margin-top: 6rem;
+}
+.about_img {
+    position: relative;
+}
 
+.about_img .trust {
+    position: absolute;
+    top: 410px;
+    right: -30px;
+    background:#d49556;
+    padding: 10px 100px 5px 20px;
+    text-align: left;
+}
+
+.team {
+    margin-top: 6rem;
+}
+
+.team_cards {
+    display: grid;
+    grid-template-columns: auto;
+    gap: 20px;
+}
+
+.team_cards .person_card .person_img  {
+    position: relative;
+    overflow: hidden;
+    width: 25rem;
+    margin: auto;
+    scale: 0.6;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    filter: brightness(50%);
+    transition: 1s;
+}
+
+.team_cards .person_card .person_img .social {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    font-size: 2rem;
+    padding: 2rem 1rem;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    color: #ffffff;
+    right: -100px;
+    top: 20%;
+    background: #d49556;
+    transition: 1s;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+}
+
+.team_cards .person_card:hover .person_img {
+    scale: 0.8;
+    filter: brightness(100%);
+    transition: 1s;
+    -webkit-filter: brightness(100%);
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+}
+
+.team_cards .person_card:hover .person_img .social {
+    right: 0;
+    transition: 1s;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+}
 
 
 /*sm&md screen*/
