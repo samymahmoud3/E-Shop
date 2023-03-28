@@ -353,6 +353,59 @@ body {
     -o-transition: 1s;
 }
 
+/*--special section--*/
+#special {
+    background: linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.4)),url("imgs/pexels-borko-manigoda-1778412.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 6rem 1rem;
+}
+
+.special_content .promo {
+    color: #c2bfbf;
+}
+
+.special_content h3 {
+    font-weight: 900;
+    font-size: 3rem;
+}
+
+.special_content .btn {
+    border: 5px solid #ffffff;
+    padding: 10px 25px;
+    color: #ffffff;
+    font-weight: 900;
+}
+
+.special_content .btn:hover {
+    background: #ffffff;
+    color: #000;
+    font-weight:900;
+}
+
+.counterdown div {
+    background: #d37416;
+    margin: 0 1rem;
+    width: 6rem;
+    padding: 1rem 1.9rem;
+    border-radius: 20px;
+    color: #ffffff;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+
+.counterdown div span {
+    font-size: 1.5rem;
+}
+
+.counterdown div p {
+    font-size: 0.5rem;
+    scale: 1.5;
+    color: #e6e1e1;
+}
 
 /*sm&md screen*/
 .navbar .navbar-toggler {
