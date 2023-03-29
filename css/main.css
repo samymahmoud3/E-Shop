@@ -407,6 +407,17 @@ body {
     color: #e6e1e1;
 }
 
+/*--contact section--*/
+#contact {
+    padding: 4rem 0;
+    background: #e4c09d;
+}
+
+#contact .form-contact {
+    padding: 4rem 3rem;
+    background: #e6a666;
+}
+
 /*sm&md screen*/
 .navbar .navbar-toggler {
     border: none !important;
