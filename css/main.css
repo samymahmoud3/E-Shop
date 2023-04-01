@@ -11,7 +11,8 @@
 }
 
 body {
-    transition: all 1s;
+    line-height: 1.7;
+    transition: all 88ms;
     -webkit-transition: all 1s;
     -moz-transition: all 1s;
     -ms-transition: all 1s;
@@ -88,7 +89,7 @@ body {
 
 .super_container .hero_img img {
     position: relative;
-    width: 600px;
+    /* width: 600px; */
     height: 100vh;
 }
 
@@ -211,6 +212,13 @@ body {
     -o-transform: translate(-50%, -50%);
 }
 
+
+.response_products {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+
 .product_card .fa-star {
     color: gold;
 }
@@ -231,7 +239,7 @@ body {
 
 .subscribe {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-       url("imgs/freestocks-_3Q3tsJ01nc-unsplash.jpg");
+        url("imgs/freestocks-_3Q3tsJ01nc-unsplash.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -248,10 +256,11 @@ body {
     margin: 2rem 0;
 }
 
-.subscribe form input , .subscribe form button {
+.subscribe form input,
+.subscribe form button {
     background: transparent;
     border: 2px solid #fff;
-    
+
     padding: 0.5rem;
     border-radius: 0;
     -webkit-border-radius: 0;
@@ -262,7 +271,6 @@ body {
 
 .subscribe form input {
     padding-right: 16rem;
-   color: red;
 }
 
 .subscribe form button:hover {
@@ -271,19 +279,30 @@ body {
     border-color: #fff;
     font-weight: 900;
 }
+
 /*--about us--*/
 #About {
     margin-top: 6rem;
 }
+
 .about_img {
     position: relative;
+    width: 700px;
+    height: 500px;
+
+}
+
+.about_img img {
+
+    width: 700px;
+    height: 500px;
 }
 
 .about_img .trust {
     position: absolute;
-    top: 410px;
-    right: -30px;
-    background:#d49556;
+    top: 436px;
+    right: -15px;
+    background: #d49556;
     padding: 10px 100px 5px 20px;
     text-align: left;
 }
@@ -294,11 +313,11 @@ body {
 
 .team_cards {
     display: grid;
-    grid-template-columns: auto;
-    gap: 20px;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
 }
 
-.team_cards .person_card .person_img  {
+.team_cards .person_card .person_img {
     position: relative;
     overflow: hidden;
     width: 25rem;
@@ -355,7 +374,7 @@ body {
 
 /*--special section--*/
 #special {
-    background: linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.4)),url("imgs/pexels-borko-manigoda-1778412.jpg");
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("imgs/pexels-borko-manigoda-1778412.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -381,7 +400,7 @@ body {
 .special_content .btn:hover {
     background: #ffffff;
     color: #000;
-    font-weight:900;
+    font-weight: 900;
 }
 
 .counterdown div {
@@ -456,5 +475,116 @@ body {
     .navbar-nav .home {
         background: transparent;
         margin-top: 5px;
+    }
+}
+
+/*--MEDIA QUERIES TABLETS--*/
+@media screen and (max-width:1024px) {
+
+    /*header*/
+    .super_container .hero_img .big-circle {
+        width: 30rem;
+        height: 30rem;
+        top: 152px;
+        left: 90px;
+    }
+
+    .super_container .hero_img img {
+        width: 500px;
+    }
+
+    .super_container .order .online {
+        padding: 2px 20px;
+    }
+
+    .super_container .order h1 {
+        font-size: 2rem;
+    }
+
+    .super_container .hero_text h1 {
+        font-size: 5rem;
+    }
+
+    .super_container .hero_text h3 {
+        font-size: 1.5rem;
+    }
+
+    .super_container .hero_text {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        line-height: 0px;
+        margin-top: 9rem;
+        z-index: 1;
+    }
+
+    /*products*/
+    .response_products {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    /*subscribe*/
+    .subscribe {
+        padding: 6rem 0;
+    }
+
+    .subscribe form input {
+        padding-right: 120px;
+    }
+
+    /*About*/
+    .responsive_about {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .about_img {
+        position: relative;
+        width: 100%;
+        height: 500px;
+
+    }
+
+    .about_img img {
+
+        width: 100%;
+        height: 500px;
+    }
+
+    .about_img .trust {
+        position: absolute;
+        top: 443px;
+        right: -15px;
+        background: #d49556;
+        padding: 10px 100px 5px 20px;
+        text-align: left;
+    }
+
+    .text-start {
+        text-align: left !important;
+        width: 85%;
+        margin-top: 5rem;
+        padding-left: 0;
+    }
+
+    .team_cards {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+
+
+}
+
+
+
+
+
+@media screen and (max-width:600px) {
+    .header {
+        background: #000;
     }
 }
