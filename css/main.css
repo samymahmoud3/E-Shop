@@ -502,7 +502,7 @@ body {
     }
 
     .super_container .hero_text h1 {
-        font-size: 5rem;
+        font-size: 5rem; 
     }
 
     .super_container .hero_text h3 {
@@ -579,12 +579,91 @@ body {
 
 }
 
-
-
-
-
+/*--MEDIA QUERIES FOR PHONES--*/
 @media screen and (max-width:600px) {
-    .header {
-        background: #000;
+
+    /*--header--*/
+    .super_container .hero_img img {
+        width: 380px;
     }
+
+    .super_container .hero_img .big-circle {
+        width: 20rem;
+        height: 20rem;
+        top: 200px;
+        left: 70px;
+    }
+
+    .super_container .hero_text {
+        margin-top: 280px;
+    }
+
+    .super_container .hero_text h3 {
+        font-size: 1rem;
+        font-weight: 900;
+    }
+
+    .super_container .hero_text h1 {
+        font-size: 3rem;
+    }
+
+    .super_container .hero_text span {
+        font-size: 3rem;
+    }
+
+    .super_container .order {
+        left: 40%;
+        top: 420px;
+        z-index: 0;
+    }
+
+    .super_container .order h1 {
+        font-size: 1.5rem;
+    }
+
+    .super_container .order .online h2 {
+        font-size: 1.4rem;
+    }
+
+    .super_container .order .online {
+        padding: 5px;
+    }
+
+
+    /*products*/
+    .response_products {
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 95%;
+        margin: auto;
+    }
+
+    /*subscribe input*/
+    .subscribe form input {
+        padding-right: 50px;
+    }
+
+    /*about*/
+    .about_img .trust {
+        position: absolute;
+        top: 443px;
+        right: -0px;
+        background: #d49556;
+        padding: 5px 90px 5px 20px;
+        text-align: left;
+    }
+
+    /*--counterDown--*/
+    .counterdown div {
+        margin: 0 0.4rem;
+        width: 4rem;
+        padding: 0.8rem 1rem;
+    }
+
+    /*--footer--*/
+    footer {
+        padding-top: 4rem;
+        padding-left: 1rem;
+    }
+
 }
